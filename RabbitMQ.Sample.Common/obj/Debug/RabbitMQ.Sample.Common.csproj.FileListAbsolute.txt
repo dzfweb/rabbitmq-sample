@@ -1,0 +1,15 @@
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\RabbitMQ.Sample.Common.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\RabbitMQ.Sample.Common.pdb
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\GreenPipes.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\MassTransit.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\MassTransit.RabbitMqTransport.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\NewId.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\Newtonsoft.Json.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\RabbitMQ.Client.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\GreenPipes.xml
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\MassTransit.xml
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\MassTransit.RabbitMqTransport.xml
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\Newtonsoft.Json.xml
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\bin\Debug\RabbitMQ.Client.xml
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\obj\Debug\RabbitMQ.Sample.Common.dll
+c:\dev\rabbitmq-sample\RabbitMQ.Sample.Common\obj\Debug\RabbitMQ.Sample.Common.pdb
