@@ -11,6 +11,7 @@ using Autofac;
 using MassTransit;
 using Autofac.Extensions.DependencyInjection;
 using MassTransit.Util;
+using RabbitMQ.Sample.Common;
 
 namespace RabbitMQ.Sample.API
 {
@@ -39,10 +40,10 @@ namespace RabbitMQ.Sample.API
             builder.Register(c =>
             {
                 return Bus.Factory.CreateUsingRabbitMq(sbc =>
-                    sbc.Host("localhost", "/", h =>
+                    sbc.Host(new Uri(RabbitMQConstants.RabbitMqUri), h =>
                     {
-                        h.Username("guest");
-                        h.Password("guest");
+                        h.Username(RabbitMQConstants.RabbitMqUser);
+                        h.Password(RabbitMQConstants.RabbitMqPassword);
                     })
                 );
             })

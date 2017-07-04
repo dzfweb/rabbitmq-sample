@@ -1,4 +1,5 @@
 ﻿using MassTransit;
+using RabbitMQ.Sample.Common;
 using RabbitMQ.Sample.Console.Consumers;
 using System;
 
@@ -10,10 +11,10 @@ namespace RabbitMQ.Sample.Console
         {
             var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
-                var host = cfg.Host(new Uri("rabbitmq://localhost/"), h =>
+                var host = cfg.Host(new Uri(RabbitMQConstants.RabbitMqUri), h =>
                 {
-                    h.Username("guest");
-                    h.Password("guest");
+                    h.Username(RabbitMQConstants.RabbitMqUser);
+                    h.Password(RabbitMQConstants.RabbitMqPassword);
                 });
 
                 cfg.ReceiveEndpoint(host, "AddUser1", e =>

@@ -1,5 +1,6 @@
 ﻿using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using RabbitMQ.Sample.Common;
 using RabbitMQ.Sample.Common.Messages.Commands;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace RabbitMQ.Sample.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Index()
         {
-            var addUserEndpoint = await _bus.GetSendEndpoint(new Uri("rabbitmq://localhost/AddUser1"));
+            var addUserEndpoint = await _bus.GetSendEndpoint(new Uri(RabbitMQConstants.RabbitMqUri + RabbitMQConstants.AddUser));
 
             await addUserEndpoint.Send<IAddUserCommand>(new
             {
